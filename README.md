@@ -4,6 +4,7 @@ Download all or just selected slides, which were persented at the Microsoft Igni
  - Script also supports PowerShell version 6
  - Use "-All" parameter to download all availabled slides
  - Use GridView UI to select individual sessions to download
+ - Tested on Windows + macOS using PowerShell
 
 
 ## Parameters
