@@ -29,7 +29,7 @@ param (
 )
 
 # Get all sessions using myIgnite API
-$Sessions = (Invoke-RestMethod 'https://api-myignite.techcommunity.microsoft.com/api/session/all') | Where-Object { $_.slideDeck } | Select-Object sessionCode, title, slideDeck -first 10
+$Sessions = (Invoke-RestMethod 'https://api-myignite.techcommunity.microsoft.com/api/session/all') | Where-Object { $_.slideDeck } | Select-Object sessionCode, title, slideDeck
 
 # If not -All is passed, open Out-GridView
 if (!$all)
